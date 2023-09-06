@@ -159,4 +159,24 @@ her har jeg valgt det document som hedder MoveDocu som ligger i mappen TestMappe
 
 ------
 
+Opgave 9 - Done
 
+Jeg har brugt HTTP-verd - POST
+
+Tjekkede https://www.dropbox.com/developers/documentation/http/documentation og fandt det endpoint jeg skulle bruge for at lave en kopi af en fil
+
+Det ser sådan her ud:
+
+https://api.dropboxapi.com/2/files/copy_v2
+
+og i body skrev jeg: 
+
+{
+    "allow_ownership_transfer": false,
+    "allow_shared_folder": false,
+    "autorename": false,
+    "from_path": "/Homework/MoveDocu.txt",
+    "to_path": "/TestMappe/MoveDocu.txt"
+}
+
+her har jeg valgt det sammen dokument fra tidligere opgave som nu ligger i mappen Homework og kopiret til TestMappe
