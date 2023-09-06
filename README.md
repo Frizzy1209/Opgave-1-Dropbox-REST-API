@@ -12,6 +12,11 @@ Opgave 2 - Done
 Brugte https://www.dropbox.com/developers/documentation/http/documentation til at finde det endpoint jeg skal bruge for at lave en ny mappe
 
 Den ser sådan her ud: 
+
+https://api.dropboxapi.com/2/files/create_folder_v2
+
+i body skrev jeg:
+
 {
     "autorename": false,
     "path": "/TestMappe"
@@ -28,6 +33,10 @@ Opgave 3 - Done
 Tjekkede https://www.dropbox.com/developers/documentation/http/documentation for at finde ud af hvilet endpoint jeg skulle bruge for at finde detaljer for en specifik mappe
 
 Den ser sådan her ud: 
+
+https://api.dropboxapi.com/2/files/get_metadata
+
+I body skrev jeg:
 
 {
     "include_deleted": false,
@@ -56,6 +65,10 @@ Tjekkede https://www.dropbox.com/developers/documentation/http/documentation og 
 
 Det ser sådan her ud: 
 
+https://content.dropboxapi.com/2/files/upload
+
+Det jeg skrev i body:
+
 {
     "autorename": false,
     "mode": "add",
@@ -72,3 +85,23 @@ og tilføjer en Header Dropbox-API-Arg, hvor man sætter følgende ind:
  Under "path" vælger man først den mappe man vil bruge og så skriver man det navn som det nye document skal hedde.
 
  Jeg har brugt HTTP-verd - POST
+
+ ------
+
+ Opgave 5 - Done
+
+ Tjekkede https://www.dropbox.com/developers/documentation/http/documentation og fandt det endpoint jeg skulle bruge for at slette en fil
+
+ Det ser sådan her ud:
+
+ https://api.dropboxapi.com/2/files/delete_v2
+
+ og i body skrev jeg det her:
+
+ {
+    "path": "/TestMappe/NewDocu.txt"
+}
+
+Jeg har brugt HTTP-verd - POST
+
+
