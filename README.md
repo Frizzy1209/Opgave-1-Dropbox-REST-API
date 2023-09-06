@@ -50,3 +50,25 @@ Jeg har brugt HTTP-verd - POST
 
 ------
 
+Opgave 4 - Done
+
+Tjekkede https://www.dropbox.com/developers/documentation/http/documentation og fandt det endpoint jeg skulle bruge for at uploade en fil
+
+Det ser sådan her ud: 
+
+{
+    "autorename": false,
+    "mode": "add",
+    "mute": false,
+    "path": "/TestMappe/NewDocu.txt",
+    "strict_conflict": false
+}
+
+Her er det vigtigt at man også ændre sin Header Content-Type til application/octet-stream 
+
+og tilføjer en Header Dropbox-API-Arg, hvor man sætter følgende ind:
+ { "autorename": false, "mode": "add", "mute": false, "path": "/TestMappe/NewDocu.txt", "strict_conflict": false }
+
+ Under "path" vælger man først den mappe man vil bruge og så skriver man det navn som det nye document skal hedde.
+
+ Jeg har brugt HTTP-verd - POST
