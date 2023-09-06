@@ -106,7 +106,7 @@ og tilføjer en Header Dropbox-API-Arg, hvor man sætter følgende ind:
 
 ------
 
-Opgave 6 - Done
+Opgave 7 - Done
 
 Jeg har brugt HTTP-verd - POST
 
@@ -132,6 +132,30 @@ og i body skrev jeg:
 }
 
 Her skriver man i path hvilken mappe man vil søge i og ud fra query skriver man det man vil søge efter 
+
+------
+
+Opgave 8 - Done
+
+Jeg har brugt HTTP-verd - POST
+
+Tjekkede https://www.dropbox.com/developers/documentation/http/documentation og fandt det endpoint jeg skulle bruge for at flytte en fil
+
+Det ser sådan her ud:
+
+https://api.dropboxapi.com/2/files/move_v2
+
+i body skrev jeg: 
+
+{
+    "allow_ownership_transfer": false,
+    "allow_shared_folder": false,
+    "autorename": false,
+    "from_path": "/TestMappe/MoveDocu.txt",
+    "to_path": "/Homework/MoveDocu.txt"
+}
+
+her har jeg valgt det document som hedder MoveDocu som ligger i mappen TestMappe og flyttet det til Homework mappen
 
 ------
 
