@@ -3,6 +3,8 @@ Opgave 1 - Done
 Har nu oprettet forbindelse til min Dropbox API
 https://www.dropbox.com/home/Apps/Opgave%201%20-%20REST%20API?di=left_nav_browse
 
+Jeg har brugt HTTP-verd - POST
+
 ------
 
 Opgave 2 - Done
@@ -16,6 +18,8 @@ Den ser sådan her ud:
 }
 
 https://www.dropbox.com/home/Apps/Opgave%201%20-%20REST%20API/TestMappe?di=left_nav_browse
+
+Jeg har brugt HTTP-verd - POST
 
 ------
 
@@ -41,6 +45,8 @@ og jeg fik så det her output
     "path_display": "/TestMappe",
     "id": "id:3-Fm7SrdQxEAAAAAAAAACg"
 }
+
+Jeg har brugt HTTP-verd - POST
 
 ------
 
