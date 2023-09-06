@@ -9,6 +9,8 @@ Jeg har brugt HTTP-verd - POST
 
 Opgave 2 - Done
 
+Jeg har brugt HTTP-verd - POST
+
 Brugte https://www.dropbox.com/developers/documentation/http/documentation til at finde det endpoint jeg skal bruge for at lave en ny mappe
 
 Den ser sådan her ud: 
@@ -24,11 +26,11 @@ i body skrev jeg:
 
 https://www.dropbox.com/home/Apps/Opgave%201%20-%20REST%20API/TestMappe?di=left_nav_browse
 
-Jeg har brugt HTTP-verd - POST
-
 ------
 
 Opgave 3 - Done
+
+Jeg har brugt HTTP-verd - POST
 
 Tjekkede https://www.dropbox.com/developers/documentation/http/documentation for at finde ud af hvilet endpoint jeg skulle bruge for at finde detaljer for en specifik mappe
 
@@ -55,11 +57,11 @@ og jeg fik så det her output
     "id": "id:3-Fm7SrdQxEAAAAAAAAACg"
 }
 
-Jeg har brugt HTTP-verd - POST
-
 ------
 
 Opgave 4 - Done
+
+Jeg har brugt HTTP-verd - POST
 
 Tjekkede https://www.dropbox.com/developers/documentation/http/documentation og fandt det endpoint jeg skulle bruge for at uploade en fil
 
@@ -84,11 +86,11 @@ og tilføjer en Header Dropbox-API-Arg, hvor man sætter følgende ind:
 
  Under "path" vælger man først den mappe man vil bruge og så skriver man det navn som det nye document skal hedde.
 
- Jeg har brugt HTTP-verd - POST
-
  ------
 
  Opgave 5 - Done
+ 
+ Jeg har brugt HTTP-verd - POST
 
  Tjekkede https://www.dropbox.com/developers/documentation/http/documentation og fandt det endpoint jeg skulle bruge for at slette en fil
 
@@ -102,6 +104,35 @@ og tilføjer en Header Dropbox-API-Arg, hvor man sætter følgende ind:
     "path": "/TestMappe/NewDocu.txt"
 }
 
+------
+
+Opgave 6 - Done
+
 Jeg har brugt HTTP-verd - POST
+
+Tjekkede https://www.dropbox.com/developers/documentation/http/documentation og fandt det endpoint jeg skulle bruge for at søge efter en fil
+
+Det ser sådan her ud:
+
+https://api.dropboxapi.com/2/files/search_v2
+
+og i body skrev jeg:
+
+{
+    "match_field_options": {
+        "include_highlights": false
+    },
+    "options": {
+        "file_status": "active",
+        "filename_only": false,
+        "max_results": 20,
+        "path": "/TestMappe"
+    },
+    "query": "test"
+}
+
+Her skriver man i path hvilken mappe man vil søge i og ud fra query skriver man det man vil søge efter 
+
+------
 
 
