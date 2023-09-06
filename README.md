@@ -21,7 +21,7 @@ https://www.dropbox.com/home/Apps/Opgave%201%20-%20REST%20API/TestMappe?di=left_
 
 Opgave 3 - Done
 
-Tjekkede dokumentation for at finde ud af hvilet endpoint jeg skulle bruge for at finde detaljer for en specifik mappe
+Tjekkede https://www.dropbox.com/developers/documentation/http/documentation for at finde ud af hvilet endpoint jeg skulle bruge for at finde detaljer for en specifik mappe
 
 Den ser sådan her ud: 
 
